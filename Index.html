@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script type="text/javascript">
+        function myFunction(num) {
+            var a = document.getElementById("o1");
+            var b = document.getElementById("o2");
+            var c = document.getElementById("o3");
+            var d = document.getElementById("o4");
+            var e = document.getElementById("o5");
+            if (num=='1') {
+                document.getElementById('btn1').style.cssText = 'top:23% ; left:12.5%';
+                document.getElementById('btn2').style.cssText = 'top:80% ; right:39%';
+              a.style.display = "block";
+              b.style.display = "none";
+              c.style.display = "none";
+              d.style.display = "none";
+              e.style.display = "none";
+            }
+            else if (num=='2') {
+                document.getElementById('btn3').style.cssText = 'top:12.5% ; left:68.5%';
+                document.getElementById('btn4').style.cssText = 'top:71% ; right:40%';
+                a.style.display = "none";
+                b.style.display = "block";
+                c.style.display = "none";
+                d.style.display = "none";
+                e.style.display = "none";
+            }
+            else if (num=='3') {
+                document.getElementById('btn5').style.cssText = 'top:10% ; left:18.5%';
+                document.getElementById('btn6').style.cssText = 'top:43.5% ; right:29%';
+                a.style.display = "none";
+                b.style.display = "none";
+                c.style.display = "block";
+                d.style.display = "none";
+                e.style.display = "none";
+            }
+            else if (num=='4') {
+                document.getElementById('btn7').style.cssText = 'top:19% ; left:37%';
+                document.getElementById('btn8').style.cssText = 'top:59% ; right:43%';
+                a.style.display = "none";
+                b.style.display = "none";
+                c.style.display = "none";
+                d.style.display = "block";
+                e.style.display = "none";
+            }
+            else {
+                document.getElementById('btn9').style.cssText = 'top:14% ; left:47%';
+                document.getElementById('btn10').style.cssText = 'top:63% ; right:11%';
+                a.style.display = "none";
+                b.style.display = "none";
+                c.style.display = "none";
+                d.style.display = "none";
+                e.style.display = "block";
+            }
+          }
+    </script>
+    <title>Document</title>
+</head>
+<body align="center">
+    <section id="desktop" class="section">
+        <div class="contentContainer">
+            <div class="headdiv">
+                <h2 class="heading">Support, now simplified</h2>
+            </div>
+            <div class="linkdiv">
+                <div class="divul">
+                        <ul id="List" class="ul" type="none">
+                            <li><a href="#" onclick="myFunction(1)">Conversations made easier</a></li>
+                            <li><a href="#" onclick="myFunction(2)">Collaborations made stronger</a></li>
+                            <li><a href="#" onclick="myFunction(3)">Support made more automatic</a></li>
+                            <li><a href="#" onclick="myFunction(4)">Answers made available faster</a></li>
+                            <li><a href="#" onclick="myFunction(5)">Insights made more accessible</a></li>
+                        </ul>
+                    </div>
+                    <div class="divimg">
+                        <div class="circle red"></div>
+                        <div class="circle yellow"></div>
+                        <div class="circle green"></div>
+                        <div class="dots" id="o1">
+                            <img class="image" id="imgbox" src="imageContent\1.png">
+                            <button id="btn1" type="button" class="circlebtn btn1" data-trigger="focus" data-toggle="popover" title="Unify support channels" data-content="Streamline your support channels - Email, Phone, Chat and more - so you can respond to all your customers from just one place">1</button>
+                            <button id="btn2" type="button" class="circlebtn btn2" data-trigger="focus" data-toggle="popover" title="Manage conversations easily" data-content="Notice trends, set priorities, assign tickets to right agents, and enable faster resolutions from one place." data-placement="left">2</button>
+                        </div>
+                        <div class="dots" id="o2">
+                            <img class="image" id="imgbox" src="imageContent\2.png">
+                            <button id="btn3" type="button" class="circlebtn btn1" data-trigger="focus" data-toggle="popover" title="Conversations with context" data-content="Invite anyone - agents, colleagues, or external business partners - to discuss and solve tickets through Freshconnect" data-placement="left">1</button>
+                            <button id="btn4" type="button" class="circlebtn btn2" data-trigger="focus" data-toggle="popover" title="Share ticket ownership" data-content="Work in parallel with other teams by sharing ticket ownership, and find answers without losing visibility at any point." data-placement="left">2</button>
+                        </div>
+                        <div class="dots" id="o3">
+                            <img class="image" id="imgbox" src="imageContent\3.png">
+                            <button id="btn5" type="button" class="circlebtn btn1" data-trigger="focus" data-toggle="popover" title="Three different automations" data-content="These automations will help you eliminate repetitive tasks and keep an eye on critical events.">1</button>
+                            <button id="btn6" type="button" class="circlebtn btn2" data-trigger="focus" data-toggle="popover" title="Manage automations easily" data-content="Automatic rule summaries, audit logs and the flexibility in using logical operators makes managing automations simple" data-placement="top">2</button>
+                        </div>
+                        <div class="dots" id="o4">
+                            <img class="image" id="imgbox" src="imageContent\4.png">
+                            <button id="btn7" type="button" class="circlebtn btn1" data-trigger="focus" data-toggle="popover" title="Knowledge Base" data-content="Compile tutorials or DIY guides for your customers so they get answers faster and can solve simple problems by themselves.">1</button>
+                            <button id="btn8" type="button" class="circlebtn btn2" data-trigger="focus" data-toggle="popover" title="Forums and Communities" data-content="Create and foster communities where users can ask questions and engage in discussions about your product." data-placement="left">2</button>
+                        </div>
+                        <div class="dots" id="o5">
+                            <img class="image" id="imgbox" src="imageContent\5.png">
+                            <button id="btn9" type="button" class="circlebtn btn1" data-trigger="focus" data-toggle="popover" title="Team Dashboards" data-content="Monitor your teams easily and take data driven decisions to hit your support targets with customizable Team Dashboards">1</button>
+                            <button id="btn10" type="button" class="circlebtn btn2" data-trigger="focus" data-toggle="popover" title="Seven Widget Types" data-content="Observe important metrics closely with seven widget types. Notice trends and drill down into extensive reports anytime with just one click." data-placement="left">2</button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <script>
+    $(document.o1).ready(function(){
+        $('[data-toggle="popover"]').popover();   
+    });
+    </script>
+    <section id="mobile">
+        <div>
+            <h1 class="title"><b>Support, now simplified</b></h1>
+        </div>
+        <div>
+            <h4 class="headings"><b>Conversations made easier</b></h4>
+            <p class="paras">Streamline your support channels - Email, Phone, Chat and more - so you can respond to all your customers from just one place</p>
+            <img class="mimg" src="imageContent\1.png">
+            <h4 class="headings"><b>Collaborations made stronger</b></h4>
+            <p class="paras">Invite anyone - agents, colleagues, or external business partners - to discuss and solve tickets through Freshconnect</p>
+            <img class="mimg" src="imageContent\2.png">
+            <h4 class="headings"><b>Support made more automatic</b></h4>
+            <p class="paras">These automations will help you eliminate repetitive tasks and keep an eye on critical events.</p>
+            <img class="mimg" src="imageContent\3.png">
+            <h4 class="headings"><b>Answers made available faster</b></h4>
+            <p class="paras">Compile tutorials or DIY guides for your customers so they get answers faster and can solve simple problems by themselves.</p>
+            <img class="mimg" src="imageContent\4.png">
+            <h4 class="headings"><b>Insights made more accessible</b></h4>
+            <p class="paras">Monitor your teams easily and take data driven decisions to hit your support targets with customizable Team Dashboards</p>
+            <img class="mimg" src="imageContent\5.png">
+        </div>
+    </section>
+</body>
+</html>
