@@ -87,8 +87,7 @@ a:link, a:visited {
     padding-bottom: 12px;
     text-decoration: none;
     display: inline-block;
-    min-height: auto;
-    max-height: 50px;
+    max-height: 76px;
     width: 100%;
     list-style: none;
     margin-bottom: 9px;
